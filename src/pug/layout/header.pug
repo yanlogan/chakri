@@ -1,0 +1,29 @@
+header
+  header.header
+    .container
+      .header__wrap
+        .header__logo
+          include ../../static/img/logo.svg
+        nav.header-nav
+          ul.header-nav__list
+            li.header-nav__item
+              a(href='#categories') Categories
+            li.header-nav__item
+              a(href='#jobs') Jobs
+            li.header-nav__item
+              a(href='#how') How it works
+            li.header-nav__item
+              a(href='#testimonial') Testimonial
+        .header-btns
+          +btn('Register', 'secondary', 'header-btns__item')
+          +btn('Sign in', 'primary', 'header-btns__item')
+  section.hero
+    .container
+      .hero__wrap
+        h1.hero__title 
+          | Find Every 
+          span.hero__accent Job 
+          | in One Platform
+        form.hero-search
+          +input('Job / Position or Location', 'search', 'hero-search__input')
+          +btn('Search', 'accent', 'hero-search__btn')

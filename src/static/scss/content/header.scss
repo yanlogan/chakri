@@ -1,0 +1,43 @@
+.header {
+  padding: 28px 0;
+}
+
+.header__wrap {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  svg { display: block; }
+  margin-right: 350px;
+}
+
+.header-nav__list {
+  display: flex;
+  margin: 0;
+  margin: 0 -28px;
+  padding: 0;
+  list-style: none;
+
+  a {
+    color: $text-dark;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+.header-nav__item {
+  margin: 0 28px;
+}
+
+.header-btns {
+  margin-left: auto;
+}
+
+.header-btns___item {
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+}

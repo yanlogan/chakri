@@ -1,0 +1,9 @@
+mixin icon(name)
+	svg(class="icon icon-" + name)
+		use(xlink:href="static/img/svg/symbol/sprite.svg#" + name)
+
+mixin btn(text='', type, className)
+	button(type='button' class='btn btn-' + type + ' ' + className) #{text}
+
+mixin input(text='', name='', className)
+	input(type="text", name=name, placeholder=text, class='input ' + className)

@@ -1,0 +1,37 @@
+.btn {
+  padding: 22px 44px;
+  font-weight: bold;
+  color: $w;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &-primary {
+    background: $primary;
+    border-color: $primary;
+    &:hover {
+      background: lighten($primary, 3%);
+      border-color: lighten($primary, 3%);
+    }
+  }
+  &-secondary {
+    color: $text-dark;
+    &:hover {
+      color: $primary;
+    }
+  }
+  &-accent {
+    background: $accent;
+    border-color: $accent;
+    &:hover {
+      background: lighten($accent, 3%);
+      border-color: lighten($accent, 3%);
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
