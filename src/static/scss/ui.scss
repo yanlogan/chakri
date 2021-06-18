@@ -48,6 +48,10 @@
   display: inline-block;
   width: 32px;
   height: 32px;
+  &_lg {
+    width: 40px;
+    height: 40px;
+  }
   &-shield {
     fill: $accent;
   }
